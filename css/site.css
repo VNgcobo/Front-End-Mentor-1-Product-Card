@@ -1,0 +1,91 @@
+:root {
+    /* Primary colours */
+    --prmclr-1: hsl(158, 36%, 37%);
+    --prmclr-2: hsl(30, 38%, 92%);
+
+    /* Neutral Colours */
+    --ntrclr-1: hsl(212, 21%, 14%);
+    --ntrclr-2: hsl(228, 12%, 48%);
+    --ntrclr-3: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    font-family: Monserrat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--prmclr-2);
+}
+
+.main{
+    width: 60%;
+    height: 25%;
+    position: relative;
+    left: 25%;
+}
+
+.main .card{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: .5rem;
+    background-color: #ffffff;
+}
+.main .card img{
+    overflow: hidden;
+}
+
+.main .card .container {
+    padding: 1rem;
+}
+.main .card p {
+    font-size: 14px;
+    
+}
+
+.main .card .container h5.substance{
+    color: var(--ntrclr-2);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.main .card .container h2.product {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+.main .card .container p.info {
+    color: var(--ntrclr-2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+.main .card .container .price{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main .card .container .price .new-price h2{
+    font-family: 'Fraunces', sans-serif;
+    color: var(--prmclr-1);
+    padding-right: 1em;
+}
+
+.main .card .container .price .old-price{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--ntrclr-2);
+}
+
+.main .card .container a button {
+    background-color: var(--prmclr-1);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    height: 3.5em;
+    width: 14em;
+}
